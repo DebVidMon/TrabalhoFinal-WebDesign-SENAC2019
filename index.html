@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Sol Poente</title>
+<link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1200px)">
+<link rel="stylesheet" href="css/styleh.css" media="only screen and (max-width: 1199px) and (orientation:landscape">
+<link rel="stylesheet" href="css/stylev.css" media="only screen and (max-width: 1199px) and (orientation:portrait">
+
+</head>
+
+<body>
+	<header>
+		<img id="logo" src="images/logo_sol_poente.png" alt="Sol Poente">
+		<img id="logo2" src="images/logo_grande.png" alt="Sol Poente">
+		<nav>
+			<ul id= "menu">
+				<li> <a href="#sobrenos"> Sobre nós </a> </li>
+				<li><a href="#funciona">Como funciona?</a></li>
+				<li><a href="#estilo">Estilos de Viagens</a></li>
+				<li><a href="#form">Personalize sua viagem</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+		<!-- Slideshow container -->
+			<div class="slideshow-container">
+
+			  <!-- Full-width images with number and caption text -->
+			  <div class="mySlides fade">
+				<img src="images/s1.jpg" style="width:100%">
+				<div class="text">Roma</div>
+				<div class="paragrafo"> <p>Capital da Itália, a cidade cosmopolita é um verdadeiro parque de diversões para apreciadores de história, 
+				fotografia, arte e arquitetura. Ruínas do Império Romano, joias do Renascimento e do Barroco são o belíssimo cenário de percursos a pé. 
+				Possui vida noturna intensa e bons restaurantes, cafés e bares. Abriga ainda a Cidade do Vaticano, sede da Igreja Católica Romana e casa do Papa.<br>
+				#Cultural #Gastronômico #Religioso #Romântico
+				</p></div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<img src="images/s2.jpg" style="width:100%">
+				<div class="text">Nepal</div>
+				<div class="paragrafo"> <p>País asiático da região da Cordilheira dos Himalaias, é um paraíso para os aventureiros. Trekking no Monte Everest,
+				safáris nos parques nacionais e rafting nas corredeiras dos Himalaias. Ainda possui o Vale Kathmandu, Patrimônio da Humanidade, e Lumbini, 
+				terra natal de Sidartha Gautama, o Buda. A culinária também chama a atenção, com influências da comida indiana e da comida tibetana.<br>
+				# Aventura #Cultural #Gastronômico #Religioso
+				</p></div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<img src="images/s3.jpg" style="width:100%">
+				<div class="text">Salvador</div>
+				<div class="paragrafo"> <p>Primeira capital do Brasil, é rica em museus e construções de grande valor arquitetônico em seu centro histórico, 
+				testemunha da história colonial do Brasil e Patrimônio da Humanidade. Ainda possui belíssimas praias e vida noturna agitada. 
+				A gastronomia é outro destaque, com os tradicionais pratos de frutos do mar e culinária de herança africana.<br>
+				#Cultural #Gastronômico #Romântico.
+				</p></div>
+			  </div>
+			  
+			  <div class="mySlides fade">
+				<img src="images/s4.jpg" style="width:100%">
+				<div class="text">Tóquio</div>
+				<div class="paragrafo"> <p>Megalópole mais densamente povoada do mundo, equilibra a modernidade globalizada com a tradição japonesa. 
+				Cidade de contrastes: a tranquilidade dos parques com o caos dos bairros comerciais, as construções tradicionais do Palácio Imperial 
+				e as torres do século 21, os museus de história com a cultura pop atual. A culinária japonesa é mais um entre todos esses encantos.<br>
+				#Cultural #Gastronômico.
+				</p></div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<img src="images/s5.jpg" style="width:100%">
+				<div class="text">Veneza</div>
+				<div class="paragrafo"> <p>Famosa por seus canais e passeios de gôndola, a cidade histórica do século 5 é praticamente um museu a céu aberto.
+				Em seu cenário labiríntico, abriga diversas atividades culturais relacionadas à música, artes plásticas, cinema, eventos literários, entre outros.
+				É um dos principais destinos românticos do mundo e um grande polo gastronômico.<br>
+				# Cultural #Gastronômico #Romântico
+				</p></div>
+			  </div>
+
+			  <div class="mySlides fade">
+				<img src="images/s6.jpg" style="width:100%">
+				<div class="text">Dubai</div>
+				<div class="paragrafo"> <p>De deserto a meca da arquitetura contemporânea, a cidade dos Emirados Árabes Unidos se consagrou como a capital mundial do luxo.
+				Pode-se pensar erroneamente que não há nada tradicional por lá. A belíssima Mesquita de Jumeirah, o bairro de Bastakiya e o Museu de Dubai, 
+				com achados arqueológicos, contam outra história. As praias de areia branca fazem parte do charme do lugar.<br>
+				# Cultural
+				</p></div>
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+
+			<!-- The dots/circles -->
+			<div id="pontos" style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>
+			  <span class="dot" onclick="currentSlide(5)"></span>
+			  <span class="dot" onclick="currentSlide(6)"></span>
+			</div>
+
+
+			  <script>
+			  var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			}
+			  </script>
+			
+		<!--Fim do SlideShow-->
+		
+		<article id="sobrenos"> <h2>Sobre Nós</h2>
+			
+			<p>Você tem uma viagem dos sonhos? Nós da S<small><small>OL</small></small> P<small><small>OENTE</small></small> estamos aqui para realizá-lo. Planejamos sua viagem de forma completamente personalizada, com roteiro dedicado a atender aos seus interesses, sejam eles pessoais, familiares ou de pequenos grupos de grandes amigos. Colocamos a seu dispor intérpretes, hospedagem, transporte, equipamentos e alimentação, além de acesso a lugares que você nem mesmo chegou a sonhar. Entre em contato conosco e saiba porque rapidamente nos tornamos referência em turismo no Brasil e em todo o mundo.</p>
+			</article>
+			
+		<section id="funciona"><h2>Como Funciona?</h2>
+		<figure><img src="images/Passos.jpg" id="horizontal" usemap="#map" alt="Sonhe, Preencha o formulário, Entraremos em contato">
+		<map name="map"><area shape="rect" coords="540,0,1100,170" alt="Formulário" href="#form"></map></figure>
+		
+		<figure><img src="images/Passos-2.jpg" id="vertical" usemap="#map" alt="Sonhe, Preencha o formulário, Entraremos em contato">
+		<map name="map"><area shape="rect" coords="220,130,500,250" alt="Formulário" href="#form"></map></figure>
+		
+		</section>
+		
+		<section id="estilo"><h2>Qual seu estilo?</h2>
+		
+		<div id="grid1">
+		<img class="fig" src="images\1.jpg" alt="Aventura" />
+		<img class="fig" src="images\2.jpg" alt="Cultural" />
+		<img class="fig" src="images\3.jpg" alt="Religioso" />
+		<img class="fig" src="images\4.jpg" alt="Gastronomico" />
+		<img class="fig" src="images\5.jpg" alt="Romantico" />
+		</div>
+		
+		<div id="grid2">
+		<p class="legenda" >Para quem gosta de esportes radicais, contato com a natureza e atividades em grupo.</p>
+		<p class="legenda" >Para quem aprecia arte, arquitetura, história, literatura, folclore,
+		ou seja, cultura. Museus, cidades históricas, festivais.</p>
+		<p class="legenda" >Para quem quer exercitar sua espiritualidade. Ver o Papa? Ir à Meca?
+		Orar no Muro das Lamentações? Um retiro na Índia? Conhecer templos budistas no Japão?</p>
+		<p class="legenda" >Para quem quer explorar os sabores do mundo. Restaurantes conceituados, comidas tradicionais, 
+		rota do vinho.</p>
+		<p class="legenda" >Encontrou o amor da sua vida? Que tal um belo cenário para ficar agarradinho?</p>
+		</div>
+		</div>
+		
+		<div id="grid4">
+		<img class="fig" src="images\1.jpg" alt="Aventura" />
+		<p class="legenda" >Para quem gosta de esportes radicais, contato com a natureza e atividades em grupo.</p>
+		<img class="fig" src="images\2.jpg" alt="Cultural" />
+		<p class="legenda" >Para quem aprecia arte, arquitetura, história, literatura, folclore,
+		ou seja, cultura. Museus, cidades históricas, festivais.</p>
+		<img class="fig" src="images\3.jpg" alt="Religioso" />
+		<p class="legenda" >Para quem quer exercitar sua espiritualidade. Ver o Papa? Ir à Meca?
+		Orar no Muro das Lamentações? Um retiro na Índia? Conhecer templos budistas no Japão?</p>
+		<img class="fig" src="images\4.jpg" alt="Gastronomico" />
+		<p class="legenda" >Para quem quer explorar os sabores do mundo. Restaurantes conceituados, comidas tradicionais, 
+		rota do vinho.</p>
+		<img class="fig" src="images\5.jpg" alt="Romantico" />
+		<p class="legenda" >Encontrou o amor da sua vida? Que tal um belo cenário para ficar agarradinho?</p>
+		</div>
+		</div>
+		
+		</section>
+		
+		<section id="quem"><h2>Quem vai com você</h2>
+		<div id="grid3">
+		<figure><img src="images/q1.png" alt="Sozinha(o)"><figcaption>Sozinha(o)</figcaption></figure>
+		<figure><img src="images/q2.png" alt="Em Casal"><figcaption>Em Casal</figcaption></figure>
+		<figure><img src="images/q3.png" alt="Em Família"><figcaption>Em Família</figcaption></figure>
+		<figure><img src="images/q4.png" alt="Em Grupo"><figcaption>Em Grupo</figcaption></figure>
+		</div> </section>
+	
+	<div id="form">
+	<h2>Personalize sua viagem</h2>
+		<form>
+			<p><label for="nome"><b>Nome:</b></label> 
+				<input type="text" name="nome" style="width: 300px;" maxlength="50" placeholder="Digite seu nome"></p>
+			<p><label for="email"><b>email:</b></label>
+				<input type="email" name="email" style="width: 300px;" placeholder="Digite seu email"></p>
+			<p><label for="zap"><b>Whatsapp (opcional):</b></label>
+				<input type="text" id="itelefone" onkeypress="mascara(this,telefone)" maxlength="15" placeholder="(00)00000-0000"></p>
+			<p><b>Que estilo de viagem te agrada?</b>
+			<br><br>
+			<input type="checkbox" name="st"/> Aventura
+			<input type="checkbox" name="st"/> Cultural
+			<input type="checkbox" name="st"/> Gastronômico
+			<input type="checkbox" name="st"/> Religioso
+			<input type="checkbox" name="st"/> Romântico
+			<input type="checkbox" name="st"/> Outro</p>
+			
+			<p><b>Quem vai com você?</b>
+			<br><br>
+			<input type="radio" name="q"/> Sozinha(o)
+			<input type="radio" name="q"/> Em Casal
+			<input type="radio" name="q"/> Em família
+			<input type="radio" name="q"/> Em grupo
+			</p>
+			
+			<p><label for="coment"><b>Qual seu sonho de viagem?</b></label>
+			<br><br>
+			<textarea name= "coment" placeholder= "Descreva sua viagem dos sonhos" rows="10" cols="35"></textarea></p>
+			<a href="obrigado.html"><input type="submit" value="Enviar"  form method="post" id="boletim"></a>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function mascara(o,f){
+    v_obj=o
+    v_fun=f
+    setTimeout("execmascara()",1)
+}
+
+function execmascara(){
+    v_obj.value=v_fun(v_obj.value)
+}
+
+function telefone(v){
+    v=v.replace(/\D/g,"")                 //Remove tudo o que não é dígito
+    v=v.replace(/^(\d\d)(\d)/g,"($1) $2") //Coloca parênteses em volta dos dois primeiros dígitos
+    v=v.replace(/(\d{5})(\d)/,"$1-$2")    //Coloca hífen entre o quarto e o quinto dígitos
+    return v
+}
+	</script>
+	<footer>
+	<figure>
+	<img id="logofooter" src="images/logo_grande.png" alt="Sol Poente">
+	</figure>
+	<section id="contato">
+	<h3>Contato</h3>
+	<p>Alameda Santos,1158<br>
+	Cj. 87 | Jardim Paulista<br>
+	CEP: 04357-001<br>
+	São Paulo<br>
+	+55 11 3030-7777<br>
+	contato@solpoente.com.br</p>
+	</section>
+	<section id="sociais">
+	<a href="#"><img src="images/face.jpg" alt="Facebook"></a>
+	<a href="#"><img src="images/insta.jpg" alt="Instagram"></a>
+	<a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+	</section>
+	<section id="dedu">
+	&copyCreated by <b> Dé&Du </b>
+	</section>
+	
+	</footer>
+	
+	<a href="#"><img id="top" src="images/top_icon.png"></a>
+	
+</body>
+</html>
